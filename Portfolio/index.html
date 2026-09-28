@@ -4,11 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vivek's Portfolio</title>
+  <meta name="description" content="Vivek Vardhan - Web Developer & AI/ML Enthusiast. Portfolio showcasing projects, skills, and certifications." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav class="navbar">
+    <span class="nav-logo">Vivek<span class="highlight">.</span></span>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- Hero Section -->
+  <header id="home" class="hero-section reveal">
   <header class="hero-section">
     <img src="image.jpg.jpeg" alt="Profile Picture" class="profile-pic" />
     <h1>Hi, I'm <span class="highlight">Vivek</span></h1>
@@ -22,33 +38,35 @@
     <a href="https://www.linkedin.com/in/vivekvardhan28/">LinkedIn</a>
     <a href="https://github.com/Pagadalavivekvardhan">GitHub</a>
     <a href="https://leetcode.com/u/vivekvardhan28/">Leetcode</a>
-    <a href="https://drive.google.com/file/d/1pRtzWuVVhiW_wJlMbwGUZDvluiBp-cpX/view?usp=drivesdk">Download Resume</a>
+    <a href="https://drive.google.com/file/d/1ZIg-Kr6xZi19Ow4udRcQuCeB-CzSd3H0/view?usp=drivesdk">Download Resume</a>
   </section>
 
   <!-- Skills -->
-  <section class="skills">
+  <section id="skills" class="skills reveal">
     <h2>Skills</h2>
     <div class="card-container">
-      <div class="card"><strong>Languages:</strong><br>Python, java, JavaScript</div>
-      <div class="card"><strong>Frameworks:</strong><br>React, Node.js,Express, FastAPI, Django</div>
-      <div class="card"><strong>Tools:</strong><br>Git, VS Code</div>
-      <div class="card"><strong>Technologies:</strong><br>REST APIs</div>
-      <div class="card"><strong>database:</strong><br>Sql, MongoDB</div>
-      <div class="card"><strong>AI&ML:</strong><br> Deep Learning (CNN,LSTM), TensorFlow, Kera’s, NumPy, Pandas</div>
+      <div class="card"><strong>Languages:</strong><br>Python, JavaScript, SQL</div>
+      <div class="card"><strong>Development:</strong><br>HTML, Tailwind CSS, React, FastAPI, REST APIs</div>
+      <div class="card"><strong>Databases:</strong><br>MySQL, PostgreSQL</div>
+      <div class="card"><strong>CS Subjects:</strong><br>Algorithms, Data Structures, Operating Systems, Computer Networks, Object-Oriented Programming</div>
+      <div class="card"><strong>DevOps & Cloud:</strong><br>Docker, Git, GitHub, AWS(EC2), Render, Streamlit</div>
+      <div class="card"><strong>AI & ML:</strong><br>Agentic AI, Machine Learning, PyTorch, NumPy, Pandas</div>
+      <div class="card"><strong>System Design:</strong><br> Scalability, Microservices, Load Balancing, Database Design, Authentication</div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section class="projects">
+  <section id="projects" class="projects reveal">
     <h2>Projects</h2>
     <div class="card-container">
       <div class="card">
-        <h3>Stock Market Prediction</h3>
-        <p>A Flask web app that fetches stock data, predicts prices using ARIMA & multi-layer LSTM models, visualizes outputs, and displays results in a user-friendly interface</p>
-        <p><strong>Tech Stack:</strong>Python, Kera’s, NumPy, and Pandas for data processing and LSTM neural network modeling. </p>
-        <p><strong>Features:</strong>Delivered predictive analytics by integrating time-series forecasting algorithms for improved market
+        <h3>AI Prescription & Medical report analysis</h3>
+        <p>Built an Agentic AI application that analyzes prescriptions and lab reports, extracting and interpreting information from unstructured medical documents, Developed FastAPI REST APIs to connect OCR, AI agents, and PostgreSQL, handling the flow from document upload to
+analysis. and finally Deployed the backend on Render and frontend with Streamlit, making the complete application available for end-to-end use.</p>
+        <p><strong>Tech Stack:</strong> Python, FastAPI, PostgreSQL, Streamlit, Agentic AI</p>
+        <p><strong>Features:</strong>Automated extraction and interpretation of medical data from prescriptions and lab reports, providing actionable insights for healthcare professionals and patients, enabling efficient decision-making and improved patient care through advanced
 analysis</p>
-        <a href="https://github.com/Pagadalavivekvardhan/stock-market-prediction.git">GitHub Link</a>
+        <a href="https://github.com/Pagadalavivekvardhan/MedGuidAI.git">GitHub Link</a>
       </div>
       <div class="card">
         <h3>Brain Tumor Detection System</h3>
@@ -61,7 +79,7 @@ analysis</p>
   </section>
 
   <!-- Certifications -->
-  <section class="certifications">
+  <section id="certifications" class="certifications reveal">
     <h2>Certifications</h2>
     <div class="card-container">
       <div class="card"><strong>AWS Academy Graduate: Cloud Architecting </strong><br>Amazon web services – May 2024 <br> <a href="#">Certification Link</a></div>
@@ -72,7 +90,7 @@ analysis</p>
   </section>
 
   <!-- Achievements -->
-  <section class="achievements">
+  <section id="achievements" class="achievements reveal">
     <h2>Achievements</h2>
     <div class="card-container">
       <div class="card">30-Day Python Language Challenge</div>
@@ -83,7 +101,7 @@ analysis</p>
   </section>
 
   <!-- Education -->
-  <section class="education">
+  <section id="education" class="education reveal">
     <h2>Education</h2>
     <div class="card-container">
       <div class="card"><strong>BTech Computer Science and Specialization in AI&ML </strong><br>VIT-AP (2022 – 2026)</div>
@@ -93,25 +111,27 @@ analysis</p>
   </section>
 
   <!-- Contact -->
-  <section class="contact">
+  <section id="contact" class="contact reveal">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
+      <p class="form-status" aria-live="polite"></p>
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Vivek. Built with HTML & CSS.</p>
+    <p>&copy; 2026 Vivek. Built with HTML & CSS.</p>
     <p>
       <a href="https://www.linkedin.com/in/vivekvardhan28/">LinkedIn</a> |
       <a href="https://github.com/Pagadalavivekvardhan">GitHub</a> |
-      <a href="https://drive.google.com/file/d/1pRtzWuVVhiW_wJlMbwGUZDvluiBp-cpX/view?usp=drivesdk">Resume</a>
+      <a href="https://drive.google.com/file/d/1ZIg-Kr6xZi19Ow4udRcQuCeB-CzSd3H0/view?usp=drivesdk">Resume</a>
     </p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

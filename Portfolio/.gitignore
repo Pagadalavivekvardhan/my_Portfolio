@@ -1,0 +1,10 @@
+# Python virtual environment — don't commit
+.venv/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Environment variables
+.env
